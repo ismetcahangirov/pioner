@@ -22,7 +22,7 @@
 
 }
 
-.hamburger_icon{
+.hamburger_icon {
     display: none;
 }
 
@@ -166,7 +166,9 @@
     text-align: left;
     margin-bottom: 32px;
 }
+.news__boxes{
 
+}
 .news__box img {
     width: 380px;
     height: 251px;
@@ -212,6 +214,7 @@ footer {
 
 .footer__right div {
     width: 155px;
+    height: ;
 }
 
 .footer__right a {
@@ -235,32 +238,245 @@ footer {
 }
 
 @media (max-width:768px) {
-    .navbar-left>a {
-        display: none;
-    }
-    .hamburger_icon{
- display: block;
- width: 20px;
- height: 20px;
-    }
-    .logo img{ 
-width: 90px;
-height: 19px;
-    }
-    header .container{
-        display: block;
+    .header-top {
+        flex-direction: column;
+        gap: 30px;
 
     }
-    .header-right-box p{
-        font-size: 10px;
+
+    .header-right-box {
+        max-width: 120px;
     }
-    .header-right-box a{
-        font-size: 10px;
+
+    .header-right-box p {
+        text-align: left;
+        font-size: 12px;
     }
-.hero__img{
+
+    .header-right-box a {
+        text-align: left;
+        font-size: 15px;
+    }
+
+.navbar-left a{
     display: none;
 }
-.hero h1{
+.hamburger_icon{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.hero{
+    padding: 40px 0;
+}
+.hero__title{
+    display: block;
+}
+.hero__title h1{
+    font-size: 30px;
+}
+.hero__title p{
+    font-size: 12px;
+}
+.hero__img img{
+    width: 100%;
+}
+.about-company{
+    padding-bottom: 40px;
+}
+.about-company-title h2{
+    font-size: 20px;
+}
+.about-company-text p{
+    font-size: 12px;
+}
+.about-company__imgs img{
+    width: 100%;
+    
+    object-fit: cover;
+}
+.product{
+    padding-bottom: 40px;
+}
+.product__title h2{
+    font-size: 20px;
+}
+.product__box{
+    max-width: max-content;
+    justify-content: center;
+    gap: 20px;
+}
+.product__box img{
+    min-height: 190px;
+}
+.product__box p{
+    font-size: 15px;
+}
+.product__box a{
+    font-size: 12px;
+}
+.map{
+    padding-bottom: 40px;
+}
+.map__title h2{
+    font-size: 20px;
+}
+.map img{
+    width: 100%;
+}
+.news__boxes{
+    flex-wrap: wrap;
+}
+.news{
+    padding-bottom: 40px;
+}
+.news__title h2{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.news__box img{
+    width: 100%;
+}
+.news__box p{
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.news__box a{
+    font-size: 12px;
+}
+.news__box span{
+font-size: 12px;
+}
+.footer__right a{
+font-size: 14px;
+}
+.footer__bottom{
+    margin-top: 40px;
+}
+.footer__bottom p{
+    font-size: 12px;
+    margin: 0;
+}
+
+}
+@media (max-width:1024px){
+    .header-top {
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+    .header-right-box {
+        max-width: 120px;
+    }
+
+    .header-right-box p {
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .header-right-box a {
+        text-align: left;
+        font-size: 18px;
+    }
+
+.navbar-left a{
+    display: none;
+}
+.hamburger_icon{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.hero{
+    padding: 40px 0;
+}
+.hero__title{
+    display: block;
+}
+.hero__title h1{
     font-size: 40px;
+}
+.hero__title p{
+    font-size: 15px;
+}
+.hero__img img{
+    width: 100%;
+}
+.about-company{
+    padding-bottom: 40px;
+}
+.about-company-title h2{
+    font-size: 30px;
+}
+.about-company-text p{
+    font-size: 15px;
+}
+.about-company__imgs img{
+    width: 100%;
+    
+    object-fit: cover;
+}
+.product{
+    padding-bottom: 40px;
+}
+.product__title h2{
+    font-size: 30px;
+}
+.product__box{
+    max-width: max-content;
+    justify-content: center;
+    gap: 20px;
+}
+.product__box img{
+    min-height: 190px;
+}
+.product__box p{
+    font-size: 18px;
+}
+.product__box a{
+    font-size: 15px;
+}
+.map{
+    padding-bottom: 40px;
+}
+.map__title h2{
+    font-size: 30px;
+}
+.map img{
+    width: 100%;
+}
+.news__boxes{
+    flex-wrap: wrap;
+}
+.news{
+    padding-bottom: 40px;
+}
+.news__title h2{
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+.news__box img{
+    width: 100%;
+}
+.news__box p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.news__box a{
+    font-size: 15px;
+}
+.news__box span{
+font-size: 15px;
+}
+.footer__right a{
+font-size: 17px;
+}
+.footer__bottom{
+    margin-top: 40px;
+}
+.footer__bottom p{
+    font-size: 15px;
+    margin: 0;
 }
 }
